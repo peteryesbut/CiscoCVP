@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1090469674:1613097943418" name="Ch5_CallStart" version="6.0.1">
+<element height="55" id="Element@386159214:1613097943418" name="Ch5_CallStart" type="Page Entry" width="152" x="300" y="30">
+<exit_states>
+<exit_state name="next" target="Element@1149354151:1613098009610"/>
+</exit_states>
+</element>
+<element height="25" id="Element@1209883713:1613097978995" type="Comment" width="336" x="473" y="44">
+<comment><![CDATA[Start Call java creates Session Data sMOTD]]></comment>
+</element>
+<element height="55" id="Element@1149354151:1613098009610" name="dec_sMOTD_exists" type="Decision" width="194" x="265" y="158">
+<exit_states>
+<exit_state name="Exists" target="Element@318145665:1613098203677"/>
+<exit_state name="DoesNotExists" target="Element@98476111:1613098206974"/>
+</exit_states>
+</element>
+<element height="55" id="Element@318145665:1613098203677" name="pExists" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="125" x="201" y="357">
+<exit_states>
+<exit_state name="done" target="Element@2026633527:1613098348087"/>
+</exit_states>
+</element>
+<element height="55" id="Element@98476111:1613098206974" name="pDoesNotExists" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="175" x="405" y="358">
+<exit_states>
+<exit_state name="done" target="Element@2026633527:1613098348087"/>
+</exit_states>
+</element>
+<element height="55" id="Element@2026633527:1613098348087" name="zBye" type="Page Connector" width="86" x="352" y="571">
+<page_connector target="Element@917306623:1612660764404">zBye<config/>
+</page_connector>
+</element>
+</page>

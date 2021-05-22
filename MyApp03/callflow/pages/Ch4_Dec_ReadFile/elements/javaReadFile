@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@312849049:1612716521641" name="javaReadFile" version="6.0.1">
+<config>
+<source type="Class">com.pierre03.ReadPropFile_StdDecision</source>
+</config>
+</decision>

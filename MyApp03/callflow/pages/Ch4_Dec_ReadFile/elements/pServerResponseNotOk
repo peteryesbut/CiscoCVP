@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@2099256757:1612742179679" name="pServerResponseNotOk" version="6.0.1">
+<config>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[The timeout is {Data.Session.TestTimeOut}
+{Data.Session.TestUri} had
+
+exit state:{Data.Element.jTestServerUp.exit_state} and 
+
+the status_code was {Data.Element.jTestServerUp.status_code}.
+
+Finally the response was {Data.Element.jTestServerUp.response}]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

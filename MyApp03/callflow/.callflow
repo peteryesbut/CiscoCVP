@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<callflow id="Callflow@1575573895:1612658240829" version="6.0.1">
+<page closed="false" id="Page@423061309:1612658240828">Appname_Start</page>
+<page closed="false" id="Page@436403832:1612662029457">Transfer</page>
+<page closed="false" id="Page@190844537:1612660764404">Bye</page>
+<page closed="false" id="Page@244337853:1612660812431">Ch4_Decisions</page>
+<page closed="false" id="Page@1132490858:1612716485061">Ch4_Dec_ReadFile</page>
+<page closed="false" id="Page@1090469674:1613097943418">Ch5_CallStart</page>
+<page closed="false" id="Page@44813602:1613178062044">Ch5_Transfer</page>
+<page closed="false" id="Page@2028713428:1613261115018">Ch6_EndCall</page>
+</callflow>

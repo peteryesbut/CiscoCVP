@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@1285292625:1612661625253" name="ynDob" version="6.0.1">
+<config>
+<settings>
+<setting name="inputmode">both</setting>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="max_nomatch_count">3</setting>
+<setting name="confidence_level">0.50</setting>
+<setting name="replay">false</setting>
+<setting name="modal">false</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="You entered " type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[You entered ]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="getCh4Dob.value" type="say_it_smart">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<say_it_smart input_format="mmddyyyy" output_format="date" type="date">{Data.Element.getCh4_Dob.value}</say_it_smart>
+</audio_item_config>
+</audio_item>
+<audio_item name="IsThatRight" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[Is that right? for yes, press 1. For no, press 2.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

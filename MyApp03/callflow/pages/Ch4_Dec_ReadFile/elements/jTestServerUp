@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@512055741:1612740438168" name="jTestServerUp" version="6.0.1">
+<config>
+<source type="Class">com.pierre03.ServerUpStdDec</source>
+</config>
+</decision>

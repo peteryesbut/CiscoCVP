@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@190844537:1612660764404" name="Bye" version="6.0.1">
+<element height="55" id="Element@917306623:1612660764404" name="zBye" type="Page Entry" width="100" x="300" y="30">
+<exit_states>
+<exit_state name="next" target="Element@1158468659:1612662133577"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1158468659:1612662133577" name="pGoodbye" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="135" x="308" y="205">
+<exit_states>
+<exit_state name="done" target="Element@322063598:1612662186893"/>
+</exit_states>
+</element>
+<element height="55" id="Element@322063598:1612662186893" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="251" x="253" y="420">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+</page>

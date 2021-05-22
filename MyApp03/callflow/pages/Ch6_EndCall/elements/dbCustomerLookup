@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@946589143:1613261365221" name="dbCustomerLookup" version="6.0.1">
+<config>
+<log>
+<data create_when="" name="Using DB:">{Data.Session.JNDI}</data>
+</log>
+<settings>
+<setting name="type">single</setting>
+<setting name="jndiName">{Data.Session.JNDI}</setting>
+<setting name="query">select * from customer where acctnum={Data.Element.getCh6Acctnum.value}</setting>
+<setting name="enableXmlResultSet">true</setting>
+<setting name="maxRowsInXML">50</setting>
+</settings>
+<element_data>
+<data create_when="Before" name="TestBringThisSoItShowsUpInTheElementDataDropDown" storable="false" type="String">none</data>
+</element_data>
+</config>
+</action_element>

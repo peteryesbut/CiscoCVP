@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@436403832:1612662029457" name="Transfer" version="6.0.1">
+<element height="55" id="Element@1791802145:1612662029457" name="zTransfer" type="Page Entry" width="119" x="44" y="20">
+<exit_states>
+<exit_state name="next" target="Element@1391471814:1612662063788"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1391471814:1612662063788" name="pTransfer" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="125" x="321" y="27">
+<exit_states>
+<exit_state name="done" target="Element@602952870:1613326806929"/>
+</exit_states>
+</element>
+<element height="55" id="Element@602952870:1613326806929" name="CVP Subdialog Return_Transfer" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="292" x="169" y="271">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element error="true" height="128" id="Element@1831395093:1613326850857" name="Error Element" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="327" x="753" y="144">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="175" id="Element@892798816:1613327215576" type="Comment" width="744" x="108" y="410">
+<comment><![CDATA[You can put anywhere the Error Element, it has no connection or exit state
+
+It's an instruction
+
+It tells ICM for an error that you are not catching, and sending this to the success path for ICM
+Give data back to ICM, so that it can process accordingly.
+You want to give session data back.]]></comment>
+</element>
+</page>

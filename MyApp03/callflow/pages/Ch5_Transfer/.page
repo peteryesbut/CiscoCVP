@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@44813602:1613178062044" name="Ch5_Transfer" version="6.0.1">
+<element height="55" id="Element@957979970:1613178062044" name="Ch5_Transfer" type="Page Entry" width="149" x="250" y="67">
+<exit_states>
+<exit_state name="next" target="Element@1404930694:1613178128885"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1404930694:1613178128885" name="ynOpenAcct" src="com.audium.server.voiceElement.menu.MYesNoMenu" type="Voice Element" width="185" x="233" y="209">
+<exit_states>
+<exit_state name="yes" target="Element@289318640:1613178270470"/>
+<exit_state name="no" target="Element@1568332844:1613178357074">
+<bendpoint>
+<dim1 x="146" y="127"/>
+<dim2 x="68" y="-95"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_nomatch" target="Element@1568332844:1613178357074">
+<bendpoint>
+<dim1 x="240" y="22"/>
+<dim2 x="162" y="-200"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="240" y="108"/>
+<dim2 x="162" y="-114"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="240" y="221"/>
+<dim2 x="162" y="-1"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_noinput" target="Element@1568332844:1613178357074">
+<bendpoint>
+<dim1 x="-13" y="133"/>
+<dim2 x="-91" y="-89"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="55" id="Element@289318640:1613178270470" type="Application Transfer" width="108" x="72" y="324">
+<app_transfer destination="Bank03">
+<from_session_data>
+<data name="callid"/>
+</from_session_data>
+</app_transfer>
+</element>
+<element height="55" id="Element@1568332844:1613178357074" name="zBye" type="Page Connector" width="86" x="360" y="432">
+<page_connector target="Element@917306623:1612660764404">zBye<config/>
+</page_connector>
+</element>
+</page>

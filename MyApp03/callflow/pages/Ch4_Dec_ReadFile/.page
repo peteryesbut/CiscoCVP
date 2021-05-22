@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1132490858:1612716485061" name="Ch4_Dec_ReadFile" version="6.0.1">
+<element height="55" id="Element@1559961808:1612716485061" name="zCh4_ReadFile" type="Page Entry" width="161" x="283" y="30">
+<exit_states>
+<exit_state name="next" target="Element@312849049:1612716521641"/>
+</exit_states>
+</element>
+<element height="55" id="Element@312849049:1612716521641" name="javaReadFile" type="Decision" width="156" x="291" y="194">
+<exit_states>
+<exit_state name="done" target="Element@2050676025:1612716894672"/>
+<exit_state name="failure" target="Element@1722342313:1612716898511"/>
+</exit_states>
+</element>
+<element height="400" id="Element@963596498:1612716717636" type="Comment" width="405" x="540" y="42">
+<comment><![CDATA[This reads a file of name=value pairs
+into session data.
+
+Calling java com.pierre03.ReadPropFile_StdDecision
+
+Ex:  url=http://google.com
+name: url
+value: http://google.com
+
+File: D:\\CVP\\CVP-Java\\MyApp03.callstart.txt
+
+environment=production
+appaudio=http://mediaserver/en-us/app/cvp
+sysaudio=http://mediaserver/en-us/sys
+securlogging=false
+url=http://google.com]]></comment>
+</element>
+<element height="55" id="Element@2050676025:1612716894672" name="pReadFileSucces" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="189" x="174" y="475">
+<exit_states>
+<exit_state name="done" target="Element@512055741:1612740438168"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1722342313:1612716898511" name="pReadFileFailure" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="186" x="445" y="476">
+<exit_states>
+<exit_state name="done" target="Element@1265406673:1612717038188"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1265406673:1612717038188" name="zBye" type="Page Connector" width="86" x="495" y="608">
+<page_connector target="Element@917306623:1612660764404">zBye<config/>
+</page_connector>
+</element>
+<element height="55" id="Element@512055741:1612740438168" name="jTestServerUp" type="Decision" width="166" x="169" y="662">
+<exit_states>
+<exit_state name="up" target="Element@809904739:1612740571690">
+<bendpoint>
+<dim1 x="-210" y="100"/>
+<dim2 x="-85" y="-88"/>
+</bendpoint>
+</exit_state>
+<exit_state name="down" target="Element@2099256757:1612742179679">
+<bendpoint>
+<dim1 x="-87" y="98"/>
+<dim2 x="-26" y="-80"/>
+</bendpoint>
+</exit_state>
+<exit_state name="timeout" target="Element@2099256757:1612742179679">
+<bendpoint>
+<dim1 x="23" y="101"/>
+<dim2 x="84" y="-77"/>
+</bendpoint>
+</exit_state>
+<exit_state name="error" target="Element@2099256757:1612742179679">
+<bendpoint>
+<dim1 x="130" y="104"/>
+<dim2 x="191" y="-74"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="55" id="Element@809904739:1612740571690" name="pServerResponseOk" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="24" y="888">
+<exit_states>
+<exit_state name="done" target="Element@905668325:1612742248784"/>
+</exit_states>
+</element>
+<element height="55" id="Element@2099256757:1612742179679" name="pServerResponseNotOk" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="259" x="264" y="888">
+<exit_states>
+<exit_state name="done" target="Element@905668325:1612742248784"/>
+</exit_states>
+</element>
+<element height="55" id="Element@905668325:1612742248784" name="zBye" type="Page Connector" width="86" x="144" y="1068">
+<page_connector target="Element@917306623:1612660764404">zBye<config/>
+</page_connector>
+</element>
+</page>

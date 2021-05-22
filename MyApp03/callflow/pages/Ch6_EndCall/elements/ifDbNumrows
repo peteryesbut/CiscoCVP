@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1260635673:1613267926219" name="ifDbNumrows" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="ifDbNumrows" default_exit_state="noData">
+        <exit_state name="gotData" conjugate="and">
+            <number operator="greater">
+                <data>
+                    <element name="dbCustomerLookup" variable="num_rows_processed" />
+                </data>
+                <constant_number value="0" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

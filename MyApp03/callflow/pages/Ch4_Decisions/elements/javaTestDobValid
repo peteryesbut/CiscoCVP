@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@180356981:1612664425286" name="javaTestDobValid" version="6.0.1">
+<config>
+<source type="Class">com.pierre03.DobElementDataTest_StandardDecision</source>
+</config>
+</decision>

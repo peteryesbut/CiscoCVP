@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@1404930694:1613178128885" name="ynOpenAcct" version="6.0.1">
+<config>
+<settings>
+<setting name="inputmode">both</setting>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">1</setting>
+<setting name="max_nomatch_count">1</setting>
+<setting name="confidence_level">0.50</setting>
+<setting name="replay">false</setting>
+<setting name="modal">false</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[If you're calling to open a new bank account, press 1, otherwise press 2, or just stay on the line.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

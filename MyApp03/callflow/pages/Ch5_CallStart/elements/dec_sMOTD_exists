@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1149354151:1613098009610" name="dec_sMOTD_exists" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="dec_sMOTD_exists" default_exit_state="DoesNotExists">
+        <exit_state name="Exists" conjugate="and">
+            <boolean check_existence="yes" value="true">
+                <data>
+                    <session name="sMOTD" />
+                </data>
+            </boolean>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@423061309:1612658240828" name="Appname_Start" version="6.0.1">
+<element height="55" id="Element@917291000:1612658240826" name="Start Of Call" start_of_call="true" type="Page Entry" width="144" x="230" y="30">
+<exit_states>
+<exit_state name="next" target="Element@1741263816:1612663395405"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1797087411:1612659656776" name="pWelcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="144" x="258" y="564">
+<exit_states>
+<exit_state name="done" target="Element@835563118:1612662323957"/>
+</exit_states>
+</element>
+<element height="55" id="Element@835563118:1612662323957" name="Ch6EndCall" type="Page Connector" width="161" x="288" y="792">
+<page_connector target="Element@1710372610:1613261115018">Ch6EndCall<config/>
+</page_connector>
+</element>
+<element height="55" id="Element@1741263816:1612663395405" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="236" x="223" y="142">
+<exit_states>
+<exit_state name="done" target="Element@1039832551:1621092665067"/>
+</exit_states>
+</element>
+<element height="55" id="Element@420684789:1612663488451" name="setApplicationVariables" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="243" x="204" y="264">
+<exit_states>
+<exit_state name="done" target="Element@1441002882:1613268608992"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1441002882:1613268608992" name="javaReadFileMain" type="Decision" width="219" x="231" y="384">
+<exit_states>
+<exit_state name="done" target="Element@1797087411:1612659656776"/>
+<exit_state name="failure" target="Element@756146778:1613268667137"/>
+</exit_states>
+</element>
+<element height="55" id="Element@554525101:1613268667137" name="zBye" type="Page Connector" width="86" x="576" y="648">
+<page_connector target="Element@917306623:1612660764404">zBye<config/>
+</page_connector>
+</element>
+<element height="55" id="Element@756146778:1613268667137" name="pReadFileFailureMain" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="249" x="455" y="486">
+<exit_states>
+<exit_state name="done" target="Element@554525101:1613268667137"/>
+</exit_states>
+</element>
+<element height="55" id="Element@1039832551:1621092665067" name="Audio_01" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="125" x="611" y="242">
+<exit_states>
+<exit_state name="done" target="Element@420684789:1612663488451"/>
+</exit_states>
+</element>
+</page>
