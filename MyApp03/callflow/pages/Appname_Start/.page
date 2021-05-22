@@ -19,7 +19,7 @@
 <exit_state name="done" target="Element@1039832551:1621092665067"/>
 </exit_states>
 </element>
-<element height="55" id="Element@420684789:1612663488451" name="setApplicationVariables" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="243" x="204" y="264">
+<element height="55" id="Element@420684789:1612663488451" name="setApplicationVariables2" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="253" x="204" y="264">
 <exit_states>
 <exit_state name="done" target="Element@1441002882:1613268608992"/>
 </exit_states>
